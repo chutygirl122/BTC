@@ -1,0 +1,12 @@
+```css
+.container {
+  border: 2px solid #00ff99;  /* හරිත-නිල්වන් බෝර්ඩර් එක */
+  padding: 15px;              /* අතුලත ඉඩ */
+  border-radius: 10px;        /* කෙටි හෝරාවලක් */
+  background-color: #111;     /* බිහිකෙට හසුන */
+  max-width: 400px;           /* අති විශාල නොවන්න */
+  margin: 20px auto;          /* මැදට යවන්න */
+  color: #00ff99;             /* අකුරු පැහැය */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+```
