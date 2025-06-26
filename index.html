@@ -44,7 +44,6 @@ welcome 😩💔
   </div>
 
 </body>
-  ```html
 <body>
   <div class="container">
     <h1>Welcome to PASIYA-MD Team</h1>
@@ -62,5 +61,49 @@ welcome 😩💔
     ">Join Our WhatsApp Channel</a>
   </div>
 </body>
-``
 </html>
+නැහැ බ්‍රෝ, මේක `<html>`, `<head>`, `<body>` structure එකක් අතුලතම දාන්න ඔනි. ඉතින් ඔයාගෙ එකට full HTML page එක වගේම ලස්සනට structure එකක් තියෙන්න මෙන්න sample එකක්:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PASIYA-MD | Live Crypto</title>
+  <style>
+    body {
+      background: linear-gradient(90deg, #0000FF, #FF0000, #FFFFFF);
+      color: #00ff99;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      background: linear-gradient(45deg, #0000FF, #FF0000, #FFFFFF);
+      border: 2px solid #00ff99;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px #00ff99;
+    }
+    a.button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: 0 4px 8px rgba(37, 211, 102, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to PASIYA-MD Team</h1>
+    <p>Stay updated with the latest bot status and market info.</p>
+
+    <h2>📊 Live BTC Price</h2>
+    <p id="btc-price">Loading...</p>
