@@ -1,5 +1,6 @@
 
-welcome 😩💔 
+welcome 
+
 <!DOCTYPE html>
 <html lang="si">
 <head>
@@ -62,9 +63,17 @@ welcome 😩💔
   </div>
 </body>
 </html>
-නැහැ බ්‍රෝ, මේක `<html>`, `<head>`, `<body>` structure එකක් අතුලතම දාන්න ඔනි. ඉතින් ඔයාගෙ එකට full HTML page එක වගේම ලස්සනට structure එකක් තියෙන්න මෙන්න sample එකක්:
-
-```html
+`<body>` 
+  ```html
+<div class="menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Market</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Join Us</a></li>
+  </ul>
+</div>
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -126,26 +135,43 @@ welcome 😩💔
 </body>
 </html>
 ``. style.css*
-
+```html
+<div class="menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Market</a></li>
+    <li><a
+-
+🎨 *style.css*
 ```css
-body {
-  background: linear-gradient(90deg, #0000FF, #FF0000, #FFFFFF);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  padding: 20px;
+.menu {
+  background-color: #000000cc;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
-.container {
-  background: linear-gradient(45deg, #0000FF, #FF0000, #FFFFFF);
-  border: 2px solid #00ff99;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 400px;
-  margin: 20px auto;
-  box-shadow: 0 0 10px #00ff99;
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-.blue-text {
-  color: #007BFF;
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  color: #00ffff;
+  text-decoration: none;
   font-weight: bold;
+  transition: 0.3s;
 }
+
+.menu ul li a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
