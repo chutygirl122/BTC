@@ -1,157 +1,143 @@
 
-welcome 
-
 <!DOCTYPE html>
-<html lang="si">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PASIYA-MD CRYPTO UPDATE</title>
+  <title>PASIYA-MD CRYPTO</title>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #00ffcc;
-      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #000;
+      color: #0f0;
       text-align: center;
-      padding: 50px;
     }
-    .title {
-      font-size: 32px;
-      margin-bottom: 20px;
+
+    header {
+      background: #111;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 0 0 10px #0f0;
     }
+
+    .ticker {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #000;
+      padding: 10px;
+      font-size: 18px;
+    }
+
     .section {
-      margin: 20px 0;
-      padding: 15px;
-      border: 1px solid #00ffcc;
-      border-radius: 8px;
+      margin: 40px 0;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 28px;
+    }
+
+    .count-box {
+      background: #111;
+      padding: 20px;
+      border: 2px solid #0f0;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #0f0;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 16px;
+    }
+
+    .calendar div {
+      padding: 10px;
+      background: #111;
+      border: 1px solid #0f0;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background: #111;
+    }
+
+    a {
+      color: #0ff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="title">🚀 PASIYA-MD CRYPTO CENTER</div>
 
-  <div class="section">
-    <h3>📈 Live Market Updates</h3>
-    <p>Bitcoin, ETH, BNB සහ තවත් පරිපථවල තත්ත්වය real-time එකට බලන්න</p>
+<header>PASIYA-MD CRYPTO CENTER</header>
+
+<div class="ticker">
+  <div>BTC 107,883</div>
+  <div>ETH2,454</div>
+  <div>SOL $143</div>
+</div>
+
+<section class="section">
+  <h2>DISCOVER THE NEXT <span style="color:#fff">BIG</span> <span style="color:#0ff">OPPORTUNITY</span></h2>
+  <div class="countdown">
+    <div class="count-box"><div id="days">0</div>Days</div>
+    <div class="count-box"><div id="hours">0</div>Hour</div>
+    <div class="count-box"><div id="minutes">0</div>Min</div>
+    <div class="count-box"><div id="seconds">0</div>Sec</div>
   </div>
+</section>
 
-  <div class="section">
-    <h3>🧠 Market News</h3>
-    <p>නවතම පුවත්, whale actions සහ Technical Analysis</p>
-  </div> 
+<section class="section">
+  <h2>Economic Calendar</h2>
+  <div class="calendar">
+    <div><strong>Date</strong></div>
+    <div><strong>Country</strong></div>
+    <div><strong>Event</strong></div>
 
-  <div class="section">
-    <h3>📞 Contact</h3>
-    <p>Owner: PASIYA-MD TEAM<br>Support: +94 76 635 9869 /+94 72 297 7523</p>
+    <div>2025-07-01</div>
+    <div>USA</div>
+    <div>FOMC Meeting</div>
+
+    <div>2025-07-03</div>
+    <div>China</div>
+    <div>Trade Balance</div>
   </div>
+</section>
 
-</body>
-<body>
-  <div class="container">
-    <h1>Welcome to PASIYA-MD Team</h1>
-    <p>Stay updated with the latest bot status and news.</p>
-    <a href="https://chat.whatsapp.com/ISXUBw0iKoM4BBK6rR45jh?mode=ac_c" target="_blank" style="  
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-      box-shadow: 0 4px 8px rgba(37, 211, 102, 0.4);
-    ">Join Our WhatsApp Channel</a>
-  </div>
+<section class="section">
+  <h2>Contact</h2>
+  <p><a href="https://chat.whatsapp.com/ISXUBw0iKoM4BBK6rR45jh?mode=ac_c">Join WhatsApp Channel</a></p>
+</section>
+
+<footer>
+  © 2025 PASIYA-MD TEAM | All Rights Reserved
+</footer>
+
+<script>
+  const targetDate = new Date("2028-05-01T00:00:00").getTime();
+
+  const countdown = () => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+    document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
+  };
+
+  setInterval(countdown, 1000);
+</script>
+
 </body>
 </html>
-`<body>` 
-  ```html
-<div class="menu">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Market</a></li>
-    <li><a href="#">News</a></li>
-    <li><a href="#">Join Us</a></li>
-  </ul>
-</div>
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>PASIYA-MD | Live Crypto</title>
-  <style>
-    body {
-      background: linear-gradient(90deg, #0000FF, #FF0000, #FFFFFF);
-      color: #00ff99;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
-    }
-    a.button {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-      box-shadow: 0 4px 8px rgba(37, 211, 102, 0.4);
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Welcome to PASIYA-MD Team</h1>
-    <p>Stay updated with the latest bot status and market info.</p>
-
-    <h2>📊 Live BTC Price</h2>
-    <p id="btc-price">Loading...
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Live BTC Market</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h2 class="blue-text">📊 Live BTC Price</h2>
-    <p id="btc-price" class="blue-text">Loading...</p>
-
-    <a href="https://chat.whatsapp.com/ISXUBw0iKoM4BBK6rR45jh?mode=ac_c" target="_blank" class="blue-text">
-      Join Our WhatsApp Channel 🚀
-    </a>
-  </div>
-  `<css>
-  background-color: #000000cc;
-  padding: 10px 0;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-.menu ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-.menu ul li {
-  margin: 0 15px;
-}
-
-.menu ul li a {
-  color: #00ffff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.menu ul li a:hover {
-  color: #ffffff;
-  text-shadow: 0 0 5px #00ffff;
-}
-
+      
