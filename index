@@ -1,0 +1,26 @@
+හරි, CSS කේතයක් දෙන්නම් ඔයාට ඒ රටාව හදා ගන්න පුළුවන්. 
+
+*නීල් - රතු - සුදු* තේමාවෙන් *linear gradient* background එකක් වටේට දාන්න මෙහෙයි:
+
+```css
+body {
+  background: linear-gradient(90deg, #0000FF, #FF0000, #FFFFFF);
+  color: #00ff99;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  background: linear-gradient(45deg, #0000FF, #FF0000, #FFFFFF);
+  border: 2px solid #00ff99;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px #00ff99;
+}
+```
+
+- මෙහි `linear-gradient(90deg, #0000FF, #FF0000, #FFFFFF)` කියන්නේ හරහා නීල් (Blue) → රතු (Red) → සුදු (White) පාට හරහා හරීතලයකි.
+- `.container` එකට දාපු gradien (45deg) 
