@@ -1,0 +1,30 @@
+ 
+```html
+<head>
+  <style>
+    body {
+      background: linear-gradient(90deg, #0000FF, #FF0000, #FFFFFF);
+      color: #00ff99;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      background: linear-gradient(45deg, #0000FF, #FF0000, #FFFFFF);
+      border: 2px solid #00ff99;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px #00ff99;
+    }
+  </style>
+</head>
+```
+
+2. *external CSS file* එකක් හදාලා, උදාහරණයක් වශයෙන් `style.css` කියලා නම දෙන්න. පස්සේ `index.html` එකට ඒක link කරන්න:  
+```html
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+``
